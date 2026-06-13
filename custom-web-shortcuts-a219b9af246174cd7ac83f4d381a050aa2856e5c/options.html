@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Web Shortcuts - 设置</title>
+    <link rel="stylesheet" href="styles/options.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 自定义网页快捷键设置</h1>
+        
+        <div class="shortcuts-list">
+            <h2>快捷键配置 (最多10个)</h2>
+            <div id="shortcutsContainer"></div>
+        </div>
+
+        <div class="actions">
+            <button id="addShortcutBtn" class="btn btn-primary">+ 添加快捷键</button>
+            <button id="saveBtn" class="btn btn-success">💾 保存设置</button>
+            <button id="resetBtn" class="btn btn-danger">🔄 重置</button>
+        </div>
+
+        <div id="status" class="status"></div>
+
+        <div class="help-section">
+            <h3>📖 使用说明</h3>
+            <ul>
+                <li><strong>快捷键：</strong>输入要使用的快捷键（如 Ctrl+1, Alt+S 等）</li>
+                <li><strong>选择器：</strong>输入目标按钮的 CSS 选择器（如 #submitBtn, .save-button 等）</li>
+                <li><strong>网站：</strong>选择应用范围（所有网站 或 特定网站）</li>
+                <li><strong>选择器说明：</strong>右键检查网页元素，复制其 class 或 id</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/options.js"></script>
+</body>
+</html>
