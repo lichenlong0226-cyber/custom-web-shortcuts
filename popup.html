@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Web Shortcuts</title>
+    <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+    <div class="popup">
+        <h2>⌨️ 快捷键</h2>
+        
+        <div id="shortcutsList" class="shortcuts-display">
+            <p class="loading">加载中...</p>
+        </div>
+
+        <div class="popup-actions">
+            <button id="openSettings" class="btn btn-settings">⚙️ 打开设置</button>
+            <button id="reloadBtn" class="btn btn-reload">🔄 刷新</button>
+        </div>
+
+        <div id="status" class="status-bar"></div>
+    </div>
+
+    <script src="js/popup.js"></script>
+</body>
+</html>
